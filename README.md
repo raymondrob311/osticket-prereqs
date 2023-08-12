@@ -35,9 +35,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>
 <p>
 Part 1 (Create Virtual Machine in Azure)
-Create a Resource Group
-Create a Windows 10 Virtual Machine (VM) with 2-4 Virtual CPUs
-When you are creating the VM, let it create a new Virtual Network (Vnet)
+-Create a Resource Group
+-Create a Windows 10 Virtual Machine (VM) with 2-4 Virtual CPUs
+-When you are creating the VM, let it create a new Virtual Network (Vnet)
 
 </p>
 <br />
