@@ -34,10 +34,10 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <img src="https://i.imgur.com/gDR1YeD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Part 1 (Create Virtual Machine in Azure)
--Create a Resource Group
--Create a Windows 10 Virtual Machine (VM) with 2-4 Virtual CPUs
--When you are creating the VM, let it create a new Virtual Network (Vnet)
+Part 1 (Create Virtual Machine in Azure) 
+  1.Create a Resource Group 
+  2.Create a Windows 10 Virtual Machine (VM) with 2-4 Virtual CPUs
+  3.When you are creating the VM, let it create a new Virtual Network (Vnet)
 
 </p>
 <br />
