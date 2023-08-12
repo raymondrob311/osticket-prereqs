@@ -69,7 +69,39 @@ Internet Information Services -> Web Management Tools -> IIS Management Console<
 <img src="https://i.imgur.com/cvE5FNr.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+<b>Open IIS as an Admin<br />
+Register PHP from within IIS<br />
+Reload IIS (Open IIS, Stop and Start the server)<br />
+Install osTicket v1.15.8</b><br />
+-Download osTicket from the Installation Files Folder<br />
+-Extract and copy “upload” folder to c:\inetpub\wwwroot <br />
+-Within c:\inetpub\wwwroot, Rename “upload” to “osTicket”<br />
+<b>Reload IIS (Open IIS, Stop and Start the server)</b><br />
+<b>Go to sites -> Default -> osTicket</b><br />
+-On the right, click “Browse *:80” <br /><br />
+
+<b>Notice that some extensions are not enabled</b><br />
+-Go back to IIS, sites -> Default -> osTicket<br />
+-Double-click PHP Manager<br />
+-Click “Enable or disable an extension”<br />
+-Enable: php_imap.dll<br />
+-Enable: php_intl.dll<br />
+-Enable: php_opcache.dll<br />
+-Refresh the osTicket site in your browse, observe the changes<br />
+
+<b>Rename: ost-config.php</b><br />
+-From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php <br />
+-To: C:\inetpub\wwwroot\osTicket\include\ost-config.php<br />
+
+<b>Assign Permissions: ost-config.php</b><br />
+-Disable inheritance -> Remove All<br />
+-New Permissions -> Everyone -> All<br />
+
+<b>Continue Setting up osTicket in the browser (click Continue)</b><br />
+-Name Helpdesk<br />
+-Default email (receives email from customers)<br />
+
 </p>
 <br />
 
