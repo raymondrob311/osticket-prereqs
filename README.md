@@ -101,14 +101,26 @@ Install osTicket v1.15.8</b><br />
 <b>Continue Setting up osTicket in the browser (click Continue)</b><br />
 -Name Helpdesk<br />
 -Default email (receives email from customers)<br />
+<b>Download and install HeidiSQL.</b><br />
+-Open Heidi SQL<br />
+-Create a new session, root/Password1<br />
+-Connect to the session<br />
+-Create a database called “osTicket”<br />
 
-</p>
-<br />
+<b>Continue Setting up osticket in the browser</b><br />
+-MySQL Database: osTicket<br />
+-MySQL Username: (insert username)<br />
+-MySQL Password: (insert password)<br />
+-Click “Install Now!”<br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
+OsTicket should be installed with no issues now<br />
+Browse to your help desk login page: http://localhost/osTicket/scp/login.php <br />
+
+<b>End Users osTicket URL:</b><br />
+http://localhost/osTicket/<br />
+
+<b>Clean up</b><br />
+-Delete: C:\inetpub\wwwroot\osTicket\setup <br />
+-Set Permissions to “Read” only: C:\inetpub\wwwroot\osTicket\include\ost-config.php<br />
+
 <br />
