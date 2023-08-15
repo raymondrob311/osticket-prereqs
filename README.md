@@ -48,7 +48,7 @@ Before we start downloading any programs, we need to enable IIS (Internet Inform
 </p>
 <p>
 <b>Open IIS as an Admin<br /></b>
-Select PHP Manager within, click Register New PHP Version. Click on Browse and choose the file named "php.cgi.exe." This file was created earlier in the lab. Once the new version of PHP is registered, reload the IIS server inside of the managment console. 
+Select PHP Manager within, click Register New PHP Version. Click on Browse and choose the file named "php.cgi.exe." This file was created earlier in the lab. Once the new version of PHP is registered, reload the IIS server inside of the managment console. <br />
 <b>Download osTicket from the Installation Files Folder</b><br /> Extract and copy “upload” folder to c:\inetpub\wwwroot. Within c:\inetpub\wwwroot, Rename “upload” to “osTicket." Reload IIS (Open IIS, Stop and Start the server). <br />
 Inside the IIS console, go to sites -> Default -> osTicketOn the right, click “Browse *:80” You will notice that some extensions are not enabled. Before installing osTicket, they will need to be enabled. To do this, Go back to IIS, sites -> Default -> osTicket, double-click on PHP Manager, and click “Enable or disable an extension” You will need to enable these 3 files: php_imap.dll, php_intl.dll and php_opcache.dll. Refresh the osTicket site in your browse and observe the changes. Rename ost-sampleconfig.php to ost-config.php within C:\inetpub\wwwroot\osTicket\include. This will change the permissions of this file. Now, open the Properties and change the permissions by doing so: Disable inheritance -> Remove All and New Permissions -> Everyone -> All.<br />
 <b>Download and install HeidiSQL.<br /></b>
